@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+}
+tr.mat-header-row.cdk-header-row, tr.mat-row.cdk-row{
+    background-color: white;
+}
+tr.mat-header-row.cdk-header-row th, tr.mat-row.cdk-row td, :host ::ng-deep .mat-form-field-underline, .filter-input mat-label{
+    color: black;
+}
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+.table-container
+{
+    height: 70vh;
+    overflow: auto;
+}
+.pointer {
+    cursor: pointer;
+}
