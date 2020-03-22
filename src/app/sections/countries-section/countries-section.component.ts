@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { countries } from '../../../environments/counties';
 import { MatTableDataSource } from '@angular/material/table';
+import { LangService } from 'src/app/services/langs';
 
 @Component({
   selector: 'app-countries-section',
@@ -8,10 +8,11 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./countries-section.component.css']
 })
 export class CountriesSectionComponent implements OnInit {
-
-  countries = new MatTableDataSource(countries)
+  
+  countries = new MatTableDataSource([])
   displayedColumns: string[] = ['name', 'code'];
-  constructor() {
+  constructor(public langService:LangService) {
+    langService.selectedLang.code
   }
 
   ngOnInit(): void {

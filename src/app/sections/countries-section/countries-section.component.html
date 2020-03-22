@@ -13,18 +13,18 @@
             <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
         </mat-form-field>
         <div class="table-container mat-elevation-z8">
-            <table mat-table [dataSource]="countries">
+            <table mat-table [dataSource]="langService.countries">
           
             <!-- Name Column -->
             <ng-container matColumnDef="name">
               <th mat-header-cell *matHeaderCellDef> {{ 'home.Name' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> <span [routerLink]="['/country/'+element.code]" class="pointer">{{element.name}}</span> </td>
+              <td mat-cell *matCellDef="let element"> <span [routerLink]="['/country/'+element.alpha2]" class="pointer"><img [src]="'assets/img/flags/'+element.alpha2+'.png'"> {{element.name}}</span> </td>
             </ng-container>
           
             <!-- Code Column -->
             <ng-container matColumnDef="code">
               <th mat-header-cell *matHeaderCellDef> {{ 'home.Code' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> <span [routerLink]="['/country/'+element.code]" class="pointer">{{element.code}}</span> </td>
+              <td mat-cell *matCellDef="let element"> <span [routerLink]="['/country/'+element.alpha2]" class="pointer">{{element.alpha2}}</span> </td>
             </ng-container>
           
             <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
