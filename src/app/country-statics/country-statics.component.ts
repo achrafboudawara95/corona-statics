@@ -3,6 +3,8 @@ import { ActivatedRoute } from "@angular/router";
 import { CoronaService } from '../services/corona-service';
 import { CountrydataEntity } from '../models/countrystatistics';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from '../shared/navbar/navbar.component';
+import { LangService } from '../services/langs';
 
 @Component({
   selector: 'app-country-statics',
@@ -13,8 +15,7 @@ export class CountryStaticsComponent implements OnInit {
   @ViewChild('ErrorModal') ErrorModal;
   private modalRef;
   country_data: CountrydataEntity = null
-
-  constructor(private route: ActivatedRoute, private coronaServ: CoronaService, private modalService: NgbModal) { }
+  constructor(public langService:LangService, private route: ActivatedRoute, private coronaServ: CoronaService, private modalService: NgbModal) { }
 
   ngOnInit(): void {
     const code = this.route.snapshot.paramMap.get("code")

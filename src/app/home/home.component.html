@@ -19,10 +19,10 @@
         <div class="col px-0">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
-              <h1>Coronavirus Statistics</h1>
-              <p class="lead text-white">Updated Global Statistics Of Coronavirus</p>
+              <h1>{{ 'home.title' | translate }}</h1>
+              <p class="lead text-white">{{ 'home.sub-title' | translate }}</p>
               <div class="mt-5">
-                <small class="text-white font-weight-bold mb-0 mr-2">*proudly coded by Achraf</small>
+                <small class="text-white font-weight-bold mb-0 mr-2">{{ 'home.coded-by' | translate }}</small>
               </div>
             </div>
           </div>
@@ -46,15 +46,15 @@
                     <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
                       <i class="ni ni-world-2"></i>
                     </div>
-                    <h5 class="text-primary text-uppercase">Global Statistics</h5>
-                    <div class="d-flex justify-content-center"><h6>Total cases: {{global_data.total_cases}}</h6></div>
-                    <div class="d-flex justify-content-center"><h6>Total recovered: {{global_data.total_recovered}}</h6></div>
-                    <div class="d-flex justify-content-center"><h6>Total unresolved: {{global_data.total_unresolved}}</h6></div>
-                    <div class="d-flex justify-content-center"><h6>Total deaths: {{global_data.total_deaths}}</h6></div>
-                    <div class="d-flex justify-content-center"><h6>Total new cases today: {{global_data.total_new_cases_today}}</h6></div>
-                    <div class="d-flex justify-content-center"><h6>Total new deaths today: {{global_data.total_new_deaths_today}}</h6></div>
-                    <div class="d-flex justify-content-center"><h6>Total active cases: {{global_data.total_active_cases}}</h6></div>
-                    <div class="d-flex justify-content-center"><h6>Total serious cases: {{global_data.total_serious_cases}}</h6></div>
+                    <h5 class="text-primary text-uppercase">{{ 'card.global-statics' | translate }}</h5>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-cases' | translate }}: </span>{{global_data.total_cases}}</h6></div>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-recovered' | translate }}: </span>{{global_data.total_recovered}}</h6></div>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-unresolved' | translate }}: </span>{{global_data.total_unresolved}}</h6></div>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-deaths' | translate }}: </span>{{global_data.total_deaths}}</h6></div>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-new cases-today' | translate }}: </span>{{global_data.total_new_cases_today}}</h6></div>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-new deaths-today' | translate }}: </span>{{global_data.total_new_deaths_today}}</h6></div>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-active-cases' | translate }}: </span>{{global_data.total_active_cases}}</h6></div>
+                    <div class="d-flex justify-content-center"><h6><span >{{ 'card.total-serious-cases' | translate }}: </span>{{global_data.total_serious_cases}}</h6></div>
                   </div>
                 </div>
               </div>

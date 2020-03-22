@@ -118,17 +118,12 @@
   </div>
   <div class="flags" ngbDropdown>
     <a class="btn btn-primary corona-color dropdown-toggle" ngbDropdownToggle>
-      <img src="assets/img/icons/flags/US.png" /> English
+      <img [src]="langService.selectedLang.icon" /> {{langService.selectedLang.label}}
     </a>
     <ul class="" aria-labelledby="navbarDropdownMenuLink2" ngbDropdownMenu>
-      <li>
+      <li *ngFor="let lang of langService.unselectedLangs" (click)="langService.selectLang(lang.code)">
         <a class="dropdown-item" href="javascript:void(0)">
-          <img src="assets/img/icons/flags/FR.png" /> Français
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="javascript:void(0)">
-          <img src="assets/img/icons/flags/AR.png" /> عربي
+          <img [src]="lang.icon" /> {{lang.label}}
         </a>
       </li>
     </ul>

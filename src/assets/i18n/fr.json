@@ -1,0 +1,26 @@
+{
+    "home": {
+        "title": "Statistiques sur les coronavirus",
+        "sub-title": "Statistiques mondiales actualisées du coronavirus",
+        "coded-by": "*fièrement codé par Achraf",
+        "Select-your-Country": "Sélectionnez votre pays",
+        "Search": "Chercher",
+        "Name": "Nom",
+        "Code": "Code"
+    },
+    "country-page": {
+        "title": "Une statistique mondiale",
+        "sub-title": "Lié à un pays spécifique"
+    },
+    "card": {
+        "global-statics": "Statistiques mondiales",
+        "total-cases": "Nombre total de cas",
+        "total-recovered": "Total récupéré",
+        "total-unresolved": "Total non résolu",
+        "total-deaths": "Nombre total de décès",
+        "total-new cases-today": "Total de nouveaux cas aujourd'hui",
+        "total-new deaths-today": "Total de nouveaux décès aujourd'hui",
+        "total-active-cases": "Total des cas actifs",
+        "total-serious-cases": "Total des cas graves"
+    }
+}

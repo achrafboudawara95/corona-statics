@@ -1,0 +1,26 @@
+{
+    "home": {
+        "title": "إحصائيات لفيروس كورونا",
+        "sub-title": "تحديث الإحصاءات العالمية لفيروس كورونا",
+        "coded-by": "*ترميز بفخر من قبل أشرف",
+        "Select-your-Country": "اختر بلدك",
+        "Search": "بحث",
+        "Name": "اسم",
+        "Code": "الشفرة"
+    },
+    "country-page": {
+        "title": "إحصائيات عالمية",
+        "sub-title": "متعلق ببلد معين"
+    },
+    "card": {
+        "global-statics": "الإحصائيات العالمية",
+        "total-cases": "إجمالي الحالات",
+        "total-recovered": "تم استرداد الإجمالي",
+        "total-unresolved": "المجموع دون حل",
+        "total-deaths": "إجمالي الوفيات",
+        "total-new cases-today": "مجموع الحالات الجديدة اليوم",
+        "total-new deaths-today": "إجمالي الوفيات الجديدة اليوم",
+        "total-active-cases": "إجمالي الحالات النشطة",
+        "total-serious-cases": "مجموع الحالات الخطيرة"
+    }
+}

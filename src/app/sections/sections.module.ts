@@ -13,6 +13,9 @@ import { CountriesSectionComponent } from './countries-section/countries-section
 import { MatTableModule } from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,18 @@ import {MatInputModule} from '@angular/material/input';
     JwBootstrapSwitchNg2Module,
     MatTableModule,
     MatInputModule,
+    TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+        }
+      }),
   ],
-  exports:[ SectionsComponent ]
+  exports:[ SectionsComponent, TranslateModule ]
 })
 export class SectionsModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http, "../../../assets/i18n/", ".json");
+}
